@@ -109,6 +109,7 @@ alias poff='sudo poweroff'
 alias nf='neofetch'
 alias cddoc='cd /home/kirb/Documents'
 alias clone='git clone'
+alias dbox='distrobox'
 
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -135,5 +136,7 @@ export MICRO_TRUECOLOR=1
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH=$PATH:/home/kirb/.spicetify
+
+export PATH=$PATH:/home/kirb/.local/bin
 
 eval "$(zoxide init zsh)"
