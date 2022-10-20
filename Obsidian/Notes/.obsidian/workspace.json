@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "47027f2154e3fd62",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Enter the Gungeon Mods.md",
-            "mode": "source",
-            "source": false
+        "id": "c6f37a21f8367771",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "964293332e196901",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gaming/Enter the Gungeon Mods.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -77,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Enter the Gungeon Mods.md",
+                "file": "Gaming/Enter the Gungeon Mods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Enter the Gungeon Mods.md",
+                "file": "Gaming/Enter the Gungeon Mods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Enter the Gungeon Mods.md"
+                "file": "Gaming/Enter the Gungeon Mods.md"
               }
             }
           }
@@ -128,9 +136,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3081a40600ec07f7",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "964293332e196901",
   "lastOpenFiles": [
-    "Enter the Gungeon Mods.md",
-    "Linux Ricing.md"
+    "Untitled.md",
+    "Linux/Linux Ricing.md",
+    "Gaming/Enter the Gungeon Mods.md"
   ]
 }
