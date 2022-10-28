@@ -116,12 +116,21 @@ alias clone='git clone'
 alias dbox='distrobox'
 alias da=''+%Y-%m-%d %A %T %Z'
 
-# cd to specific directories
+# Changing directories
 alias cddown='cd /home/kirb/Downloads'
 alias cddoc='cd /home/kirb/Documents'
+alias home='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Remove a directory and all files
+alias rmd='/bin/rm  --recursive --force --verbose '
 
 # Changing 'ls' to 'exa'
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias ls='exa -alFh --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
