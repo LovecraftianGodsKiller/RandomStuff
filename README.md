@@ -77,3 +77,9 @@ Kvantum
   Translucent Windows
   	Reduce window opacity by - 15%
   	Reduce Menu Opacity by - 90%
+
+oh-my-zsh plugins
+  [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+  [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+  [archlinux (pacman and aur helper quick commands)](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux)
+  [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
