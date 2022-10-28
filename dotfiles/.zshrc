@@ -105,9 +105,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 export VISUAL=nvim
 
-
 ### Aliases ###
-
 # Uncategorized
 alias c='clear && neofetch'
 alias ca='clear'
