@@ -150,6 +150,19 @@ alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR 
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
+# Termux
+alias pkgin='pkg install'
+alias pkgre='pkg remove'
+alias pkgupd='pkg update'
+alias pkgupg='pkg upgrade'
+alias nalain='nala install'
+alias nalare='nala remove'
+alias nalaupd='nala update'
+alias nalaupd='nala upgrade'
+alias changerepo='termux-change-repo'
+alias reloadsettings='termux-reload-settings'
+alias storage='termux-setup-storage'
+
 # Enabling Micro True color for color schemes
 export MICRO_TRUECOLOR=1
 
