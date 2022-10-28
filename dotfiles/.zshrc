@@ -114,7 +114,7 @@ alias poff='sudo poweroff'
 alias nf='neofetch'
 alias clone='git clone'
 alias dbox='distrobox'
-alias da=''+%Y-%m-%d %A %T %Z'
+alias da='+%Y-%m-%d %A %T %Z'
 
 # Changing directories
 alias cddown='cd /home/kirb/Downloads'
