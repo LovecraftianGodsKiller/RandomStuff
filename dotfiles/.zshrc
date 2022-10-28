@@ -101,22 +101,34 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# changing default editor
+export EDITOR=nvim
+export VISUAL=nvim
+
+
 ### Aliases ###
+
+# Uncategorized
 alias c='clear && neofetch'
 alias ca='clear'
 alias reb='sudo reboot'
 alias poff='sudo poweroff'
 alias nf='neofetch'
-alias cddoc='cd /home/kirb/Documents'
 alias clone='git clone'
 alias dbox='distrobox'
 
+# cd to specific directories
+alias cddown='cd /home/kirb/Downloads'
+alias cddoc='cd /home/kirb/Documents'
+
+# Changing 'ls' to 'exa'
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
+# Pacman and Yay
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias pacin='sudo pacman -S'
@@ -130,7 +142,7 @@ alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR 
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
-
+# Enabling Micro True color for color schemes
 export MICRO_TRUECOLOR=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
