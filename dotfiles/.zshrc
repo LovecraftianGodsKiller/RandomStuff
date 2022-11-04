@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # changing default editor
 export EDITOR=nvim
 export VISUAL=nvim
+# changing vim to neovim
+alias vim='neovim'
 
 ### Aliases ###
 # Uncategorized
