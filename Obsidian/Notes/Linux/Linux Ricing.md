@@ -46,6 +46,7 @@ KDE
 			[Relax Splash](https://www.pling.com/p/1687599/)		
 	Plasma 5 Applets
 		[Control Centre](https://store.kde.org/p/1916655)
+                [Plasma Customization Saver](https://store.kde.org/p/1298955)
 
 
 
