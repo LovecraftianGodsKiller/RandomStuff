@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 export VISUAL=nvim
 # changing vim to neovim
-alias vim='neovim'
+alias vim='nvim'
 
 ### Aliases ###
 # Uncategorized
@@ -139,6 +139,7 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
 # Pacman and Yay
+alias pacsy="sudo pacman -Sy"                    # update pkglist
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias pacin='sudo pacman -S'
@@ -175,3 +176,5 @@ export PATH=$PATH:/home/kirb/.spicetify
 export PATH=$PATH:/home/kirb/.local/bin
 
 eval "$(zoxide init zsh)"
+
+export XDG_CONFIG_HOME="${HOME}/.config"
