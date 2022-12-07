@@ -2,6 +2,7 @@ List of Applications to reinstall after os installation
 
 
 Arch Linux
+   
 
 From Pacman   
   exa   
@@ -18,7 +19,8 @@ From Pacman
 Pacman (not remebering if preinstalled)   
   neofetch   
   python
-     
+   
+   
 From AUR   
   firefox-developer-edition   
   github-desktop-bin   
@@ -27,10 +29,10 @@ From AUR
   prismlauncher-qt5   
   spotify   
   xclicker   
+   
 
 From PyPI   
   konsave - python -m pip install konsave   
-   
    
    
 From Flatpak   
@@ -38,10 +40,8 @@ From Flatpak
   [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)   
    
    
-   
 AppImages   
   [BetterDiscord](https://betterdiscord.app/)   
-   
    
    
 Obisidian Plungins and themes   
@@ -65,13 +65,14 @@ Obisidian Plungins and themes
           Accent Text Color Preset   
             Accent Color   
       Editor   
-         
    
+
 Others   
   [klassy](https://github.com/paulmcauley/klassy)   
   [oh-my-zsh](https://ohmyz.sh/)   
   [spicetify](https://spicetify.app/)   
-     
+   
+
 KDE Appearance   
   Application Style - kvantum   
   Plasma Style - Breeze   
@@ -81,12 +82,14 @@ KDE Appearance
   Icons - Papirus Colors Dark   
   Cursors - Breeze   
    
+
 Kvantum   
   Theme - Dracula-purple   
   Translucent Windows   
   	Reduce window opacity by - 15%   
   	Reduce Menu Opacity by - 90%   
    
+
 oh-my-zsh plugins   
   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)   
   [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)   
