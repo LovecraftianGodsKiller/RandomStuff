@@ -5,6 +5,20 @@ neofetch
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+### Antigen plugin manager
+source /home/kirb/.antigen/antigen.zsh
+
+# Antigen external plugins
+atigen bundle zsh-users/zsh-auto-suggestions
+atigen bundle zsh-users/zsh-history-substring-search
+atigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load Theme
+antigen theme romkatv/powerlevel10k
+
+# Tell Antigen that you are finished
+antigen apply
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
