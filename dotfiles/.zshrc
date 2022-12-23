@@ -146,10 +146,10 @@ alias .....='cd ../../../..'
 alias rmd='/bin/rm  --recursive --force --verbose '
 
 # Changing 'ls' to 'lsd'
-alias ls='lsd -alFh --color=always --group-directories-first' # my preferred listing
+alias ls='lsd -alFh --color=always --group-directories-first --header --hyperlink auto' # my preferred listing
 alias la='lsd -a --color=always --group-directories-first'  # all files and dirs
 alias ll='lsd -l --color=always --group-directories-first'  # long format
-alias lt='lsd -aT --color=always --group-directories-first' # tree listing
+alias lt='lsd -alFh --color=always --group-directories-first --tree --header --hyperlink auto' # tree listing
 alias l.='lsd -a | egrep "^\."'
 
 # Pacman and Yay
