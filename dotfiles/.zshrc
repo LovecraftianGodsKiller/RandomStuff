@@ -6,12 +6,12 @@ neofetch
 export ZSH="$HOME/.oh-my-zsh"
 
 ### Antigen plugin manager
-source /home/kirb/.antigen/antigen.zsh
+source $HOME/antigen.zsh
 
 # Antigen external plugins
-atigen bundle zsh-users/zsh-auto-suggestions
-atigen bundle zsh-users/zsh-history-substring-search
-atigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load Theme
 antigen theme romkatv/powerlevel10k
@@ -188,7 +188,5 @@ export MICRO_TRUECOLOR=1
 export PATH=$PATH:/home/kirb/.spicetify
 
 export PATH=$PATH:/home/kirb/.local/bin
-
-eval "$(zoxide init zsh)"
 
 export XDG_CONFIG_HOME="${HOME}/.config"
