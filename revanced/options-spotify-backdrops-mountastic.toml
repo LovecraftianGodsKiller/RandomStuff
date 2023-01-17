@@ -20,7 +20,7 @@ max = "5.0"
 debuggable = false
 
 ['spotify-theme']
-backgroundColor = "#ff050110"
+backgroundColor = "#ff151C24"
 accentColor = "#ff21304d"
 accentPressedColor = "#ff192030"
 
