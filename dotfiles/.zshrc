@@ -176,9 +176,9 @@ alias nalain='nala install'
 alias nalare='nala remove'
 alias nalaupd='nala update'
 alias nalaupd='nala upgrade'
-alias changerepo='termux-change-repo'
-alias reloadsettings='termux-reload-settings'
-alias storage='termux-setup-storage'
+# alias changerepo='termux-change-repo'
+# alias reloadsettings='termux-reload-settings'
+# alias storage='termux-setup-storage'
 
 # Enabling Micro True color for color schemes
 export MICRO_TRUECOLOR=1
