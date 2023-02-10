@@ -167,6 +167,10 @@ alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR 
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
+# get fastes mirrors
+alias mirror='reflector --country --connection-timeout 60 --download-timeout 60 --fastest 10 --latest 10 --number 10 --verbose --save /etc/pacman.d
+irrorlist '
+
 # Termux
 alias pkgin='pkg install'
 alias pkgre='pkg remove'
