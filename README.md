@@ -11,7 +11,9 @@ Antien install command
 ```
 curl -L git.io/antigen > antigen.zsh
 ```
-
+   
+   
+   
 Arch Linux
    
 
