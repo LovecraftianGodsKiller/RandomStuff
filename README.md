@@ -1,5 +1,7 @@
 List of Applications to reinstall after os installation
 
+Oh My Zsh istall command
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 Arch Linux
    
