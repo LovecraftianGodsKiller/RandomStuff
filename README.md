@@ -7,7 +7,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 
 Antien install command   
+
+```
 curl -L git.io/antigen > antigen.zsh
+```
 
 Arch Linux
    
