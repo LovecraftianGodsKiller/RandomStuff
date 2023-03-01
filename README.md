@@ -55,6 +55,22 @@ kitty
 ```
 cp ./dotconfig/kitty/* ~/.config/kitty/
 ```   
+   
+### ReVanced   
+[revanced-patches](https://github.com/inotia00/revanced-patches)   
+[revanced-cli](https://github.com/inotia00/revanced-cli)   
+[revanced-integrations](https://github.com/revanced-integrations)   
+[yt-revanced-keystore](https://github.com/LovecraftianGodsKiller/RandomStuff/blob/main/revanced/revanced-extended-youtube.keystore)   
+[yt-revanced-options.toml](https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/revanced/revanced-extended-options.toml)   
+[YouTube apk list (APKMirror)](https://apkmirror.com/apk/google-inc/youtube/)   
+#### Patch YouTube Command (standard amoled theme)   
+```
+java -jar revanced-cli-jar -c -a yt.apk -b revanced-patches.jar -m revanced-integrations.apk --keystore rvx-yt.keystore --options revanced-extended-options.toml -o rvx.apk
+```   
+#### Patch YouTube (materialyou)   
+```
+java -jar revanced-cli-jar -c -a yt.apk -b revanced-patches.jar -i materialyou -e theme -m revanced-integrations.apk --keystore rvx-yt.keystore --options revanced-extended-options.toml -o rvx.apk
+```   
 
 Arch Linux
    
