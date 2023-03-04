@@ -65,11 +65,11 @@ cp ./dotconfig/kitty/* ~/.config/kitty/
 [YouTube apk list (APKMirror)](https://apkmirror.com/apk/google-inc/youtube/)   
 #### Patch YouTube Command (standard amoled theme)   
 ```
-java -jar revanced-cli-jar -c -a yt.apk -b revanced-patches.jar -m revanced-integrations.apk --keystore rvx-yt.keystore --options revanced-extended-options.toml -o rvx.apk
+java -jar revanced-cli-all.jar -c -a yt.apk -b revanced-patches.jar -m revanced-integrations.apk --keystore rvx.keystore --options revanced-extended-options.toml -o rvx.apk
 ```   
 #### Patch YouTube (materialyou)   
 ```
-java -jar revanced-cli-jar -c -a yt.apk -b revanced-patches.jar -i materialyou -e theme -m revanced-integrations.apk --keystore rvx-yt.keystore --options revanced-extended-options.toml -o rvx.apk
+java -jar revanced-cli-all.jar -c -a yt.apk -b revanced-patches.jar -i materialyou -e theme -m revanced-integrations.apk --keystore rvx.keystore --options revanced-extended-options.toml -o rvx.apk
 ```   
 
 Arch Linux
