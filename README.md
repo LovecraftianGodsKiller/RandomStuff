@@ -59,8 +59,8 @@ cp ./dotconfig/kitty/* ~/.config/kitty/
 ### ReVanced   
 [revanced-patches](https://github.com/inotia00/revanced-patches)   
 [revanced-cli](https://github.com/inotia00/revanced-cli)   
-[revanced-integrations](https://github.com/revanced-integrations)   
-[yt-revanced-keystore](https://github.com/LovecraftianGodsKiller/RandomStuff/blob/main/revanced/revanced-extended-youtube.keystore)   
+[revanced-integrations](https://github.com/inotia00/revanced-integrations)   
+[yt-revanced-keystore](https://github.com/LovecraftianGodsKiller/RandomStuff/blob/main/revanced/rvx.keystore)   
 [yt-revanced-options.toml](https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/revanced/revanced-extended-options.toml)   
 [YouTube apk list (APKMirror)](https://apkmirror.com/apk/google-inc/youtube/)   
 #### Patch YouTube Command (standard amoled theme)   
