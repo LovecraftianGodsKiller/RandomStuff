@@ -120,6 +120,19 @@ export EDITOR=nvim
 export VISUAL=nvim
 # changing vim to neovim
 alias vim='nvim'
+# changing default editor if lunarvim is installed
+# export EDITOR=lvim
+# export VISUAL=lvim'
+# changing lunarvim to neovim
+# alias nvim='lvim'
+
+
+# changing default editor - termux
+# export EDITOR=/data/data/com.termux/files/home/.local/bin/lvim
+# export VISUAL=/data/data/com.termux/files/home/.local/bin/lvim
+# changing lunarvim to neovim
+# alias lvim='/data/data/com.termux/files/home/.local/bin/lvim'
+# alias nvim='/data/data/com.termux/files/home/.local/bin/lvim'
 
 ### Aliases ###
 # Uncategorized
