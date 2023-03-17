@@ -14,14 +14,30 @@ cd into home directory
 ```
 cd $HOME
 ```   
-Backup and copy .zshrc   
+Backup .zshrc   
 ```
-mv ~/.zshrc ~/.zshrc.bak && cp ./dotfile/.zshrc ~/
+mv ~/.zshrc ~/.zshrc.bak
 ```   
-Backup and copy .p10k.zsh   
+Download my zshrc file
 ```
-mv ~/.p10k.zsh ~/.p10k.zsh.bak && cp./dotfile/.p10k.zsh ~/
+aria2c https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/dotfiles/.zshrc
+```   
+Reload zsh   
+```
+exec zsh
+```   
+Backup .p10k.zsh   
+```
+mv ~/.p10k.zsh ~/.p10k.zsh.bak
 ```  
+Download my p10k coonfig file
+```
+aria2c https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/dotfiles/.p10k.zsh
+```   
+Reload zsh
+```
+exec zsh
+```   
 Create github directory (optional but recommended. I make this to organize any repos I might clone)   
 ```
 mkdir github
