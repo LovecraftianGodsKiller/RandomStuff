@@ -14,6 +14,14 @@ cd into home directory
 ```
 cd $HOME
 ```   
+Backup and copy .zshrc   
+```
+mv ~/.zshrc ~/.zshrc.bak && cp ./dotfile/.zshrc ~/
+```   
+Backup and copy .p10k.zsh   
+```
+mv ~/.p10k.zsh ~/.p10k.zsh.bak && cp./dotfile/.p10k.zsh ~/
+```  
 Create github directory (optional but recommended. I make this to organize any repos I might clone)   
 ```
 mkdir github
@@ -26,14 +34,6 @@ cd into cloned repo
 ```
 cd RandomStuff
 ```   
-Backup and copy .zshrc   
-```
-mv ~/.zshrc ~/.zshrc.bak && cp ./dotfile/.zshrc ~/
-```   
-Backup and copy .p10k.zsh   
-```
-mv ~/.p10k.zsh ~/.p10k.zsh.bak && cp./dotfile/.p10k.zsh ~/
-```  
 Restart zsh   
 ```
 exec zsh
