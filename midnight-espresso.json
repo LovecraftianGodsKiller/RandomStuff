@@ -1,0 +1,175 @@
+{
+    "name": "Midnight Esppresso",
+    "description": "A theme made by kartoflu ported by LovecraftianGodsKiller",
+    "authors": [
+        {
+            "name": "Vodka Martini",
+            "id": "1068030255455015013"
+        }
+    ],
+  "spec": 2,
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#f3dbcf",
+            "#f3dbcf"
+        ],
+        "HEADER_SECONDARY": [
+            "#e5c1cd",
+            "#e5c1cd"
+        ],
+        "TEXT_NORMAL": [
+            "#efdfd7",
+            "#efdfd7"
+        ],
+        "TEXT_MUTED": [
+            "#503e38",
+            "#503e38"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#e5c1cd",
+            "#e5c1cd"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#f3dbcf",
+            "#f3dbcf"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#f3dbcf",
+            "#f3dbcf"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#c9bbc8",
+            "#c9bbc8"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#4d616c",
+            "#5d737e"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_FLOATING": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_MENTIONED": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#5d737e",
+            "#5d737e"
+        ],
+          "CHANNEL_TEXT_AREA_PLACEHOLDER": [
+            "#f3dbcf",
+            "#f3dbcf"
+        ],
+       
+        "SCROLLBAR_THIN_THUMB": [
+            "#1a1d23",
+            "#1a1d23"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent",
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#1a1d23",
+            "#1a1d23"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "transparent",
+            "transparent"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#4d616c",
+            "#4d616c"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#b6b4c2",
+            "#b6b4c2"
+        ],
+        "TEXT_LINK": [
+            "#ddbcae",
+            "#ddbcae"
+        ],
+        "KEYBOARD": [
+            "#5d737e",
+            "#5d737e"
+        ],
+        "CHANNEL_ICON": [
+            "#b6b4c2",
+            "#b6b4c2"
+        ],
+        "CHAT_BACKGROUND": [
+            "#5d737e",
+            "#5d737e"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY_500": "#5d737e",
+        "PRIMARY_100": "#e5c1cd",
+        "PRIMARY_200": "#f4eae5",
+        "PRIMARY_300": "#1b1412",
+        "PRIMARY_360": "#9e8376",
+        "PRIMARY_400": "#9e8376",
+        "PRIMARY_600": "#100d0a",
+        "PRIMARY_630": "#150f0d",
+        "PRIMARY_700": "#150f0d",
+        "PRIMARY_800": "#100d0a",
+        "BRAND_260": "#150f0d",
+        "BRAND_500": "#9e8376",
+        "BRAND_900": "#e5c1cd",
+        "YELLOW_300": "#9e8376",
+        "GREEN_600": "#9e8376",
+        "DANGER": "#c9bbc8",
+        "RED_400": "#9e8376"
+    },
+    "background": {
+        "blur": 0.1,
+        "url": "https://cdn.discordapp.com/attachments/1086985889286209586/1087006908923269160/canva.png",
+        "alpha": 1.0    
+},
+   "color": "#5d737e"
+    }
