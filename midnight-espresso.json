@@ -86,20 +86,20 @@
             "#5d737e"
         ],
         "BACKGROUND_MODIFIER_HOVER": [
-            "#5d737e",
-            "#5d737e"
+            "#150f0d",
+            "#150f0d"
         ],
         "BACKGROUND_MODIFIER_ACTIVE": [
-            "#5d737e",
-            "#5d737e"
+            "#150f0d",
+            "#150f0d"
         ],
         "BACKGROUND_MODIFIER_SELECTED": [
-            "#4d616c",
-            "#4d616c"
+            "#150f0d",
+            "#150f0d"
         ],
         "BACKGROUND_MODIFIER_ACCENT": [
-            "#5d737e",
-            "#5d737e"
+            "#150f0d",
+            "#150f0d"
         ],
           "CHANNEL_TEXT_AREA_PLACEHOLDER": [
             "#f3dbcf",
