@@ -117,6 +117,9 @@ From AUR
   spotify   
   xclicker   
    
+Fedora   
+   libstdc++-static (needed for lunarvim
+   gcc-c++ (needed for lunarvim)   
 
 From PyPI   
   konsave - python -m pip install konsave   
