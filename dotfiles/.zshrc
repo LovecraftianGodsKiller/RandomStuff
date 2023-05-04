@@ -126,7 +126,6 @@ alias vim='nvim'
 # changing lunarvim to neovim
 # alias nvim='lvim'
 
-
 # changing default editor - termux
 # export EDITOR=/data/data/com.termux/files/home/.local/bin/lvim
 # export VISUAL=/data/data/com.termux/files/home/.local/bin/lvim
@@ -144,6 +143,8 @@ alias nf='neofetch'
 alias clone='git clone'
 alias dbox='distrobox'
 alias da='+%Y-%m-%d %A %T %Z'
+alias a2c='aria2c'
+alias ac='aria2c'
 
 # Changing directories
 alias cddown='cd /home/kirb/Downloads'
