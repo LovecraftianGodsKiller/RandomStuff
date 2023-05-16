@@ -5,19 +5,22 @@ neofetch
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-### Antigen plugin manager
-source $HOME/antigen.zsh
+### Antidote plugin manager
+source $HOME/.antidote/antidote.zsh
+
+### load antidote plugins
+antidote load
 
 # Antigen external plugins
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-autosuggestions
+# antigen bundle zsh-users/zsh-history-substring-search
+# antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load Theme
-antigen theme romkatv/powerlevel10k
+# antigen theme romkatv/powerlevel10k
 
 # Tell Antigen that you are finished
-antigen apply
+# antigen apply
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -125,6 +128,7 @@ alias vim='nvim'
 # export VISUAL=lvim'
 # changing lunarvim to neovim
 # alias nvim='lvim'
+
 
 # changing default editor - termux
 # export EDITOR=/data/data/com.termux/files/home/.local/bin/lvim
