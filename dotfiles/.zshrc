@@ -3,13 +3,36 @@ neofetch
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
+
+# Compinit
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# Zinit plugin manager
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOM
+E"
+source "${ZINIT_HOME}/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Zinit plugins
+zinit for \
+    light-mode \
+  romkatv/powerlevel10k \
+    light-mode \
+  zsh-users/zsh-autosuggestions \
+    light-mode \
+  zdharma-continuum/fast-syntax-highlighting \
+  zdharma-continuum/history-search-multi-word \
 
 ### Antidote plugin manager
-source $HOME/.antidote/antidote.zsh
+# source $HOME/.antidote/antidote.zsh
 
 ### load antidote plugins
-antidote load
+# antidote load
 
 # Antigen external plugins
 # antigen bundle zsh-users/zsh-autosuggestions
