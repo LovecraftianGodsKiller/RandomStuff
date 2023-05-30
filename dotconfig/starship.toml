@@ -1,31 +1,21 @@
-add_newline = false
-scan_timeout = 10
-
 format = """
-(fg:#282a36)
-$username$directory$character"""
-
-right_format = """
-(fg:#282a36)$git_branch$git_status $time$shell
+$username$directory$fill$git_branch$git_status $memory_usage$time$shell
+$character
 """
 
-[line_break]
-disabled = false
+add_newline = true
 
-[fill]
-symbol = " "
-style = "fg:#252525 bg:#6f6565"
+scan_timeout = 50
+
+command_timeout = 550
 
 [character]
 success_symbol = "[](fg:#50fa7b bold)"
 error_symbol = "[](fg:#ff5555 bold)"
 
-[battery]
-full_symbol = ""
-format = "[ $symbol$percentage ](fg:#fff1cf)"
-
-[[battery.display]]
-threshold = 100
+[fill]
+symbol = " "
+disabled = false
 
 [time]
 format = '[](fg:#bd93f9)[ \[$time\] ](fg:#282a36 bg:#bd93f9)'
@@ -64,3 +54,7 @@ format = '([\[$all_status$ahead_behind\]](fg: bg:#6f6565))'
 format = "[](fg:#f8f8f2 bold)[ ](fg:#282a36 bg:#f8f8f2 bold)[ ](fg:#f8f8f2 bg:#bd93f9 bold)"
 show_always = true
 disabled = false
+
+[memory_usage]
+disabled = false
+format = "$ram_pct"
