@@ -3,36 +3,13 @@ neofetch
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-# export ZSH="$HOME/.oh-my-zsh"
-
-# Compinit
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
-# Zinit plugin manager
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOM
-E"
-source "${ZINIT_HOME}/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
-# Zinit plugins
-zinit for \
-    light-mode \
-  romkatv/powerlevel10k \
-    light-mode \
-  zsh-users/zsh-autosuggestions \
-    light-mode \
-  zdharma-continuum/fast-syntax-highlighting \
-  zdharma-continuum/history-search-multi-word \
+export ZSH="$HOME/.oh-my-zsh"
 
 ### Antidote plugin manager
-# source $HOME/.antidote/antidote.zsh
+source $HOME/.antidote/antidote.zsh
 
 ### load antidote plugins
-# antidote load
+antidote load
 
 # Antigen external plugins
 # antigen bundle zsh-users/zsh-autosuggestions
@@ -196,17 +173,42 @@ alias l.='lsd -a | egrep "^\."'
 # Pacman and Yay
 alias pacsy="sudo pacman -Sy"                    # update pkglist
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
-alias pacin='sudo pacman -S'
-alias pacre='sudo pacman -R'
-alias yayin='yay -S'
-alias yayre='yay -R'
+alias pacsyyu='sudo pacman -Syu'                # Refresh pkglist & update standard pkgs
+alias pacin='sudo pacman -S'                     # install package(s)
+alias sps='sudo pacman -S'                       # install package(s)
+alias pacre='sudo pacman -R'                     # remove package(s)
+alias spr='sudo pacman -R'                       # remove package(s)
+alias pacres='sudo pacman -Rs'                   # remove package(s) with all dependencies
+alias sprs='sudo pacman -Rs'                     # remove package(s) with all dependencies
+alias yayin='yay -S'                             # install package(S) from aur
+alias yayre='yay -R'                             # remove package(S) from aur
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
+alias parusua='paru -Sua'                        # update only AUR pkgs (paru)
+alias parsua='paru -Sua'                         # update only AUR pkgs (paru)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
+alias yaysyyu='yay -Syyu'                        # update standard pkgs and AUR pkgs (yay)
+alias parusyyu='paru -Syu'                      # update standard pkgs and AUR pkgs (paru)
+alias parsyyu='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
+alias update='sudo pacman -Syu'                 # update standard pkgs
+alias fullupdate='paru -Syu'                    # update standard pkgs and AUR pkgs (paru)
+alias fupdate='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
+alias upd='sudo pacmqan -Syu'                   # update standard pkgs
+alias fupd='paru -Syu'                          # update standard pkgs and AUR pkgs (paru)
+alias sysupd='sudo pacman -Syu'                 # update standard pkgs
+alias fsysupd='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unneeded dependencies
+alias paccache='sudo pacman -Scc'                # remove pacman cahce
+alias parcache='paru -Scc'                       # remove pacman and AUR cache
+
+# yt-dlp
+alias yta-aac='yt-dlp --extract-audio --audio-format aac'
+alias yta-best='yt-dlp --extract-audio --audio-format best'
+alias yta-flac='yt-dlp --extract-audio --audio-format flac'
+alias yta-mp3='yt-dlp --extract-audio --audio-format mp3'
+alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[m4a]/bestvideo+bestaudio' --merge-output-format mp4"
 
 # dnf and rpm
 alias dnfin='sudo dnf install'
