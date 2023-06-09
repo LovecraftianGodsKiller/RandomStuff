@@ -3,7 +3,7 @@ neofetch
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/usr/share/oh-my-zsh"
 
 ### Antidote plugin manager
 source $HOME/.antidote/antidote.zsh
@@ -90,7 +90,7 @@ antidote load
 # Add wisely, as too many plugins slow down shell startup.
 ### plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -119,16 +119,16 @@ antidote load
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # changing default editor
-export EDITOR=nvim
-export VISUAL=nvim
+# export EDITOR=nvim
+# export VISUAL=nvim
 # changing vim to neovim
-alias vim='nvim'
+# alias vim='nvim'
 # changing default editor if lunarvim is installed
-# export EDITOR=lvim
-# export VISUAL=lvim'
+export EDITOR=lvim
+export VISUAL=lvim
 # changing lunarvim to neovim
-# alias nvim='lvim'
-
+alias nvim='lvim'
+alias vim='lvim'
 
 # changing default editor - termux
 # export EDITOR=/data/data/com.termux/files/home/.local/bin/lvim
@@ -173,7 +173,7 @@ alias l.='lsd -a | egrep "^\."'
 # Pacman and Yay
 alias pacsy="sudo pacman -Sy"                    # update pkglist
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syu'                # Refresh pkglist & update standard pkgs
+alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias pacin='sudo pacman -S'                     # install package(s)
 alias sps='sudo pacman -S'                       # install package(s)
 alias pacre='sudo pacman -R'                     # remove package(s)
@@ -187,21 +187,24 @@ alias parusua='paru -Sua'                        # update only AUR pkgs (paru)
 alias parsua='paru -Sua'                         # update only AUR pkgs (paru)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias yaysyyu='yay -Syyu'                        # update standard pkgs and AUR pkgs (yay)
-alias parusyyu='paru -Syu'                      # update standard pkgs and AUR pkgs (paru)
-alias parsyyu='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
-alias update='sudo pacman -Syu'                 # update standard pkgs
-alias fullupdate='paru -Syu'                    # update standard pkgs and AUR pkgs (paru)
-alias fupdate='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
-alias upd='sudo pacmqan -Syu'                   # update standard pkgs
-alias fupd='paru -Syu'                          # update standard pkgs and AUR pkgs (paru)
-alias sysupd='sudo pacman -Syu'                 # update standard pkgs
-alias fsysupd='paru -Syu'                       # update standard pkgs and AUR pkgs (paru)
+alias parusyyu='paru -Syyu'                      # update standard pkgs and AUR pkgs (paru)
+alias parsyyu='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
+alias update='sudo pacman -Syyu'                 # update standard pkgs
+alias fullupdate='paru -Syyu'                    # update standard pkgs and AUR pkgs (paru)
+alias fupdate='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
+alias upd='sudo pacmqan -Syyu'                   # update standard pkgs
+alias fupd='paru -Syyu'                          # update standard pkgs and AUR pkgs (paru)
+alias sysupd='sudo pacman -Syyu'                 # update standard pkgs
+alias fsysupd='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unneeded dependencies
 alias paccache='sudo pacman -Scc'                # remove pacman cahce
 alias parcache='paru -Scc'                       # remove pacman and AUR cache
+
+# fix obvious typos
+alias cd..='cd ..'
 
 # yt-dlp
 alias yta-aac='yt-dlp --extract-audio --audio-format aac'
@@ -235,6 +238,33 @@ alias nalaupd='nala upgrade'
 # alias reloadsettings='termux-reload-settings'
 # alias storage='termux-setup-storage'
 
+# # ex = EXtractor for all kinds of archives
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   tar xf $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
 # Enabling Micro True color for color schemes
 export MICRO_TRUECOLOR=1
 
@@ -245,3 +275,6 @@ export PATH=$PATH:/home/kirb/.spicetify
 export PATH=$PATH:/home/kirb/.local/bin
 
 export XDG_CONFIG_HOME="${HOME}/.config"
+
+export $XDG_SESSION_TYPE=wayland
+
