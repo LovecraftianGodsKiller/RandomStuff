@@ -47,6 +47,9 @@
   services.xserver.layout = "us";
   # services.xserver.xkbOptions = "eurosign:e,caps:escape";
 
+  # nvidia drivers
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
