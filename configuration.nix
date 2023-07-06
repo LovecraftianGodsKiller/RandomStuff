@@ -82,6 +82,7 @@
     gh
     git
     gnumake
+    gnupg
     gnutar
     # gimp
     # hugo
@@ -90,7 +91,7 @@
     lsd
     # steam
     neofetch
-    prismlauncher-qt5
+    # prismlauncher-qt5
     tldr
     unzip
     p7zip
