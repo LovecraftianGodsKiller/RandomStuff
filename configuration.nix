@@ -96,6 +96,11 @@
     p7zip
   ];
 
+  # hyprland
+  # programs.hyprland.enable = true;
+  # programs.hyprland.xwayland.enable = true;
+  # programs.hyprland.xwayland.hidpi = true;
+
   # installing and enabling zsh
   programs.zsh.enable = true;
   # users.defaultUserShell = pkgs.zsh; # changing shell system wide
