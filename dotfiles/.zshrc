@@ -3,7 +3,7 @@ neofetch
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/usr/share/oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ### Antidote plugin manager
 source $HOME/.antidote/antidote.zsh
@@ -171,37 +171,32 @@ alias lt='lsd -alFh --color=always --group-directories-first --tree --header --h
 alias l.='lsd -a | egrep "^\."'
 
 # Pacman and Yay
-alias pacsy="sudo pacman -Sy"                    # update pkglist
-alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
-alias pacin='sudo pacman -S'                     # install package(s)
-alias sps='sudo pacman -S'                       # install package(s)
-alias pacre='sudo pacman -R'                     # remove package(s)
-alias spr='sudo pacman -R'                       # remove package(s)
+alias pacin='sudo pacman -S'                     # install package(s) from repos
+alias sps='sudo pacman -S'                       # install package(s) from repos
+alias parin='paru -S'                            # isntall package(s) from aur (paru)
+alias paruin='paru -S'                           # install package(s) from aur (paru)
+alias yayin='yay -S'                             # install package(S) from aur (yay)
+alias pacre='sudo pacman -R'                     # remove package(s) from repos or aur
+alias spr='sudo pacman -R'                       # remove package(s) from repos or aur
+alias parre='paru -R'                            # remove package(s) from repos or aur (paru)
+alias parure='paru -R'                           # remove package(s) from repos or aur (paru) 
+alias yayre='yay -R'                             # remove package(S) from repos or aur (yay)
 alias pacres='sudo pacman -Rs'                   # remove package(s) with all dependencies
 alias sprs='sudo pacman -Rs'                     # remove package(s) with all dependencies
-alias yayin='yay -S'                             # install package(S) from aur
-alias yayre='yay -R'                             # remove package(S) from aur
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias parusua='paru -Sua'                        # update only AUR pkgs (paru)
+alias parrs='paru -Rs'                           # remove package(s) will all dependencies (paru)
+alias parurs='paru -Rs'                          # remove package(s) with all dependencies (paru)
+alias yayrs='yay -Rs'                            # remove package(s) with all dependencies (yay)
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unused dependencies
+alias pacsy='sudo pacman -Sy'                    # update pkglist
+alias pacsyu='sudo pacman -Syu'                  # update only standardp pkgs
 alias parsua='paru -Sua'                         # update only AUR pkgs (paru)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias yaysyyu='yay -Syyu'                        # update standard pkgs and AUR pkgs (yay)
-alias parusyyu='paru -Syyu'                      # update standard pkgs and AUR pkgs (paru)
-alias parsyyu='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
-alias update='sudo pacman -Syyu'                 # update standard pkgs
-alias fullupdate='paru -Syyu'                    # update standard pkgs and AUR pkgs (paru)
-alias fupdate='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
-alias upd='sudo pacmqan -Syyu'                   # update standard pkgs
-alias fupd='paru -Syyu'                          # update standard pkgs and AUR pkgs (paru)
-alias sysupd='sudo pacman -Syyu'                 # update standard pkgs
-alias fsysupd='paru -Syyu'                       # update standard pkgs and AUR pkgs (paru)
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+alias parusua='paru -Sua'                        # update only AUR pkgs (paru)
+alias yaysua='paru -Sua'                         # update only AUR pkgs (paru)
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unused dependencies
+alias paccache='sudo pacman -Scc'                # clean standard pkg cache
+alias parcache='paru -Scc'                       # clean standard and aur pkg cahce
+alias parucache='paru -Scc'                      # clean standard and aur pkg cache
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unneeded dependencies
-alias paccache='sudo pacman -Scc'                # remove pacman cahce
-alias parcache='paru -Scc'                       # remove pacman and AUR cache
 
 # fix obvious typos
 alias cd..='cd ..'
@@ -213,13 +208,14 @@ alias yta-flac='yt-dlp --extract-audio --audio-format flac'
 alias yta-mp3='yt-dlp --extract-audio --audio-format mp3'
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[m4a]/bestvideo+bestaudio' --merge-output-format mp4"
 
-# dnf and rpm
-alias dnfin='sudo dnf install'
-alias dnfre='sudo dnf remove'
-alias dnfup='sudo dnf upgrade'
-alias dnfupd='sudo dnf upgrade'
-alias dnfupg='sudo dnf upgrade'
-alias rpmin='sudo rpm -i'
+# edit config files
+alias editkitty='nvim $HOME/.config/kitty/kitty.conf'       # edit kitty configuration file
+alias edit-kitty='nvim $HOME/.config/kitty/kitty.conf'      # edit kitty configuration file
+alias editzshrc='nvim $HOME/.zshrc'                         # edit .zshrc
+alias edit-zshrc='nvim $HOME/.zshrc'                        # edit .zshrc
+alias edithypr='nvim $HOME/.config/hypr/hyprland.conf'      # edit hyprland configuration file
+alias edit-hypr='nvim $HOME/.config/hypr/hyprland.conf'     # edit hyprland configuration file
+alias editwaybar='nvim $HOME/.config/waybar/config'         # edit waybar configuration file
 
 # get fastes mirrors
 alias mirror='reflector --country --connection-timeout 60 --download-timeout 60 --fastest 10 --latest 10 --number 10 --verbose --save /etc/pacman.d
@@ -264,6 +260,14 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+# dnf and rpm
+alias dnfin='sudo dnf install'
+alias dnfre='sudo dnf remove'
+alias dnfup='sudo dnf upgrade'
+alias dnfupd='sudo dnf upgrade'
+alias dnfupg='sudo dnf upgrade'
+alias rpmin='sudo rpm -i'
 
 # Enabling Micro True color for color schemes
 export MICRO_TRUECOLOR=1
