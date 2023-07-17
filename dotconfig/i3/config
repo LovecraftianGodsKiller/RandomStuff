@@ -25,8 +25,8 @@
 font pango: Noto Sans Regular 10
 
 # set the mod key to the winkey:
-set $mod Mod4       # Windows/Super/Meta Key
-set $alt Mod1       # Left Alt Key
+set $mod Mod4
+set $alt Mod1
 
 #####################
 # workspace layout: #
@@ -54,7 +54,7 @@ new_window pixel 1
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gap inner 8
+gaps inner 8
 gaps outer 2
 
 # show window title bars (not officially supported with i3gaps)
@@ -176,7 +176,7 @@ mode "resize" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
-bindsym $mod+Shift+r mode "resize"
+# bindsym $mod+Shift+r mode "resize"
 
 # same bindings, but for the arrow keys
 #	bindsym Left resize shrink width 10 px or 10 ppt
@@ -262,7 +262,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+t layout stacking
+# bindsym $mod+t layout stacking
 bindsym $mod+g layout tabbed
 bindsym $mod+s layout toggle split
 
@@ -578,9 +578,6 @@ strip_workspace_numbers yes
         urgent_workspace   #FF5555 #FF5555 #F8F8F2
         binding_mode       #FF5555 #FF5555 #F8F8F2
   }
-
-	}
-}
 
 # you can add different bars for multidisplay setups on each display:
 # set output HDMI-0 to the display you want the bar, --transparency can be set.
