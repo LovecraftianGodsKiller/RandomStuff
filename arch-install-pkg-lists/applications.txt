@@ -1,7 +1,12 @@
 firefox-developer-edition
+flatpak
+ghostscript
 git
 github-cli
+gsfonts
 kitty
 lsd
 neofetch
 neovim
+python
+python-pip
