@@ -1,4 +1,6 @@
+discord
 firefox-developer-edition
+flameshot
 flatpak
 ghostscript
 git
