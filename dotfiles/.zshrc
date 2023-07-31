@@ -119,16 +119,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # changing default editor
-# export EDITOR=nvim
-# export VISUAL=nvim
+export EDITOR=nvim
+export VISUAL=nvim
 # changing vim to neovim
-# alias vim='nvim'
+alias vim='nvim'
 # changing default editor if lunarvim is installed
-export EDITOR=lvim
-export VISUAL=lvim
+# export EDITOR=lvim
+# export VISUAL=lvim
 # changing lunarvim to neovim
-alias nvim='lvim'
-alias vim='lvim'
+# alias nvim='lvim'
+# alias vim='lvim'
 
 # changing default editor - termux
 # export EDITOR=/data/data/com.termux/files/home/.local/bin/lvim
@@ -141,8 +141,12 @@ alias vim='lvim'
 # Uncategorized
 alias c='clear && neofetch'
 alias ca='clear'
-alias reb='sudo reboot'
-alias poff='sudo poweroff'
+alias reb='reboot'
+alias sreb='sudo reboot'
+alias sureb='sudo reboot'
+alias poff='poweroff'
+alias spoff='sudo poweroff'
+alias supoff='sudo poweroff'
 alias nf='neofetch'
 alias clone='git clone'
 alias dbox='distrobox'
@@ -173,13 +177,13 @@ alias l.='lsd -a | egrep "^\."'
 # Pacman and Yay
 alias pacin='sudo pacman -S'                     # install package(s) from repos
 alias sps='sudo pacman -S'                       # install package(s) from repos
-alias parin='paru -S'                            # isntall package(s) from aur (paru)
-alias paruin='paru -S'                           # install package(s) from aur (paru)
+alias parin='paru -S --skipreview'               # isntall package(s) from aur (paru)
+alias paruin='paru -S --skipreview'                           # install package(s) from aur (paru)
 alias yayin='yay -S'                             # install package(S) from aur (yay)
 alias pacre='sudo pacman -R'                     # remove package(s) from repos or aur
 alias spr='sudo pacman -R'                       # remove package(s) from repos or aur
-alias parre='paru -R'                            # remove package(s) from repos or aur (paru)
-alias parure='paru -R'                           # remove package(s) from repos or aur (paru) 
+alias parre='paru -R --skipreview'                            # remove package(s) from repos or aur (paru)
+alias parure='paru -R --skipreview'                           # remove package(s) from repos or aur (paru) 
 alias yayre='yay -R'                             # remove package(S) from repos or aur (yay)
 alias pacres='sudo pacman -Rs'                   # remove package(s) with all dependencies
 alias sprs='sudo pacman -Rs'                     # remove package(s) with all dependencies
@@ -189,9 +193,9 @@ alias yayrs='yay -Rs'                            # remove package(s) with all de
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unused dependencies
 alias pacsy='sudo pacman -Sy'                    # update pkglist
 alias pacsyu='sudo pacman -Syu'                  # update only standardp pkgs
-alias parsua='paru -Sua'                         # update only AUR pkgs (paru)
-alias parusua='paru -Sua'                        # update only AUR pkgs (paru)
-alias yaysua='paru -Sua'                         # update only AUR pkgs (paru)
+alias parsua='paru -Sua --skipreview'                         # update only AUR pkgs (paru)
+alias parusua='paru -Sua --skipreview'                        # update only AUR pkgs (paru)
+alias yaysua='paru -Sua --skipreview'                         # update only AUR pkgs (paru)
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages/remove unused dependencies
 alias paccache='sudo pacman -Scc'                # clean standard pkg cache
 alias parcache='paru -Scc'                       # clean standard and aur pkg cahce
@@ -218,8 +222,7 @@ alias edit-hypr='nvim $HOME/.config/hypr/hyprland.conf'     # edit hyprland conf
 alias editwaybar='nvim $HOME/.config/waybar/config'         # edit waybar configuration file
 
 # get fastes mirrors
-alias mirror='reflector --country --connection-timeout 60 --download-timeout 60 --fastest 10 --latest 10 --number 10 --verbose --save /etc/pacman.d
-irrorlist '
+alias mirror='reflector --country US --connection-timeout 60 --download-timeout 60 --fastest 10 --latest 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist '
 
 # Termux
 alias pkgin='pkg install'
