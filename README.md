@@ -1,92 +1,6 @@
-### Instlling Shell Configuration
-
-Install Oh My Zsh   
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```   
-
-Install Antigen   
-```
-curl -L git.io/antigen > antigen.zsh
-```   
-
-cd into home directory   
-```
-cd $HOME
-```   
-Backup .zshrc   
-```
-mv ~/.zshrc ~/.zshrc.bak
-```   
-Download my zshrc file
-```
-aria2c https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/dotfiles/.zshrc
-```   
-Reload zsh   
-```
-exec zsh
-```   
-Backup .p10k.zsh   
-```
-mv ~/.p10k.zsh ~/.p10k.zsh.bak
-```  
-Download my p10k coonfig file
-```
-aria2c https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/dotfiles/.p10k.zsh
-```   
-Reload zsh
-```
-exec zsh
-```   
-Create github directory (optional but recommended. I make this to organize any repos I might clone)   
-```
-mkdir github
-```   
-Clone this repo   
-```
-git clone https://github.com/LovecraftianGodsKiller/RandomStuff.git
-```   
-cd into cloned repo   
-```
-cd RandomStuff
-```   
-Restart zsh   
-```
-exec zsh
-```   
-
-### Installing Package Configuration   
-
-Neofetch   
-```
-cp ./dotconfig/neofetch/* ~/.config/neofetch/
-```   
-
-lsd   
-```
-cp -r ./dotconfig/lsd/* ~/.config/lsd/
-```   
-
-kitty   
-```
-cp ./dotconfig/kitty/* ~/.config/kitty/
-```   
-   
-### ReVanced   
-[revanced-patches](https://github.com/inotia00/revanced-patches)   
-[revanced-cli](https://github.com/inotia00/revanced-cli)   
-[revanced-integrations](https://github.com/inotia00/revanced-integrations)   
-[yt-revanced-keystore](https://github.com/LovecraftianGodsKiller/RandomStuff/blob/main/revanced/rvx.keystore)   
-[yt-revanced-options.toml](https://raw.githubusercontent.com/LovecraftianGodsKiller/RandomStuff/main/revanced/revanced-extended-options.toml)   
-[YouTube apk list (APKMirror)](https://apkmirror.com/apk/google-inc/youtube/)   
-#### Patch YouTube Command (standard amoled theme)   
-```
-java -jar revanced-cli-all.jar -c -a yt.apk -b revanced-patches.jar -m revanced-integrations.apk --keystore rvx.keystore --options revanced-extended-options.toml -o rvx.apk
-```   
-#### Patch YouTube (materialyou)   
-```
-java -jar revanced-cli-all.jar -c -a yt.apk -b revanced-patches.jar -i materialyou -e theme -m revanced-integrations.apk --keystore rvx.keystore --options revanced-extended-options.toml -o rvx.apk
-```   
+### Useful Packages
+#### [advcpmv](https://github.com/jarun/advcpmv) - A Patch for GNU Core Utilities cp, mv to add progress bars
+  
 
 Arch Linux
    
@@ -116,24 +30,13 @@ From AUR
   prismlauncher-qt5   
   spotify   
   xclicker   
-   
-Fedora   
-   libstdc++-static (needed for lunarvim
-   gcc-c++ (needed for lunarvim)   
 
-From PyPI   
-  konsave - python -m pip install konsave   
-   
-   
-From Flatpak   
-  [Bottles](https://flathub.org/apps/details/com.usebottles.bottles)   
-  [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)   
-   
-   
-AppImages   
-  [BetterDiscord](https://betterdiscord.app/)   
-   
-   
+
+
+
+
+
+
 Obisidian Plungins and themes   
   Plugins   
     Advanced Tables   
