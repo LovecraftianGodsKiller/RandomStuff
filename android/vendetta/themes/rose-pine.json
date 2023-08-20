@@ -91,28 +91,28 @@
             "#1F1F2B"
         ],
         "BACKGROUND_MODIFIER_SELECTED": [
-            "#3A1211",
-            "#373147"
+            "#eb6f92",
+            "#eb6f92"
         ],
         "BACKGROUND_MODIFIER_ACCENT": [
-            "#29272E",
-            "#29272E"
+            "#26233a",
+            "#26233a"
         ],
         "SCROLLBAR_THIN_THUMB": [
-            "#26273b",
-            "#26273b"
+            "#21202e",
+            "#21202e"
         ],
         "SCROLLBAR_THIN_TRACK": [
             "transparent",
             "transparent"
         ],
         "SCROLLBAR_AUTO_THUMB": [
-            "#26273b",
-            "#26273b"
+            "#21202e",
+            "#21202e"
         ],
         "SCROLLBAR_AUTO_TRACK": [
-            "1a1926",
-            "1a1926"
+            "#403d52",
+            "#403d52"
         ],
         "CHANNEL_TEXT_AREA_PLACEHOLDER": [
             "#A9966A",
