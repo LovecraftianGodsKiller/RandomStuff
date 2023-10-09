@@ -119,6 +119,20 @@
         "GREEN_360": "#4c7f90",
         "RED_560" : "#4c7f90",
         "RED_400": "#4c7f90"
+    "plus":{
+        "version":"0",
+        "customOverlays": true,
+        "iconpack":"rosiecord-plumpy",
+        "icons":{
+          "ic_new_pins":"#4c7f90",
+          "ic_notification_settings":"#081924",
+          "StatusStreaming": "#081924",
+          "StatusMobileOnline": "#4c7f90",
+          "StatusIdle": "#4c7f90",
+          "StatusDND": "#4c7f90",
+          "StatusOffline": "#808080",
+          "StatusOnline": "#4c7f90"
+        },
     },
     "spec": 2,
     "background": {
