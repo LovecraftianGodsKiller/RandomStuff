@@ -119,6 +119,7 @@
         "GREEN_360": "#4c7f90",
         "RED_560" : "#4c7f90",
         "RED_400": "#4c7f90"
+    },
     "plus":{
         "version":"0",
         "customOverlays": true,
